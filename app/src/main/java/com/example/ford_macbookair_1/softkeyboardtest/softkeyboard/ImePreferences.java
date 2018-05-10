@@ -19,8 +19,6 @@ package com.example.ford_macbookair_1.softkeyboardtest.softkeyboard;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-
-import com.android.inputmethodcommon.InputMethodSettingsFragment;
 import com.example.ford_macbookair_1.softkeyboardtest.R;
 import com.example.ford_macbookair_1.softkeyboardtest.common.InputMethodSettingsFragment;
 

@@ -26,6 +26,8 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.example.ford_macbookair_1.softkeyboardtest.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,11 +66,7 @@ public class CandidateView extends View {
     
     private GestureDetector mGestureDetector;
 
-    /**
-     * Construct a CandidateView for showing suggested words for completion.
-     * @param context
-     * @param attrs
-     */
+
     public CandidateView(Context context) {
         super(context);
         mSelectionHighlight = context.getResources().getDrawable(

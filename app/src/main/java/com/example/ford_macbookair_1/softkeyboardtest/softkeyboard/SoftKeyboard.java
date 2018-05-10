@@ -30,6 +30,8 @@ import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 
+import com.example.ford_macbookair_1.softkeyboardtest.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

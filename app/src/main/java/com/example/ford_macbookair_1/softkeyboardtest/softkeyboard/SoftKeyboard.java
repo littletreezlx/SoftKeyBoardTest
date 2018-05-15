@@ -16,20 +16,30 @@
 
 package com.example.ford_macbookair_1.softkeyboardtest.softkeyboard;
 
+import android.content.Context;
+import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.os.Binder;
+import android.os.IBinder;
 import android.text.InputType;
+import android.text.Layout;
 import android.text.method.MetaKeyKeyListener;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
+import com.example.ford_macbookair_1.softkeyboardtest.MainActivity;
+import com.example.ford_macbookair_1.softkeyboardtest.MyApplication;
 import com.example.ford_macbookair_1.softkeyboardtest.R;
 
 import java.util.ArrayList;
@@ -56,6 +66,8 @@ public class SoftKeyboard extends InputMethodService
      */
     static final boolean PROCESS_HARD_KEYS = true;
 
+//    private IMEBinderimeBinder=new IMEBinder();
+
     private InputMethodManager mInputMethodManager;
 
     private LatinKeyboardView mInputView;
@@ -77,7 +89,18 @@ public class SoftKeyboard extends InputMethodService
     private LatinKeyboard mCurKeyboard;
     
     private String mWordSeparators;
-    
+
+//    @Override
+//    public IBinder onBind(Intent intent){
+//        return iMEBinder;
+//    }
+//
+//    public class IMEBinder extends Binder {
+//        public SoftKeyBoard getService(){
+//            return SoftKeyBoard.this;
+//        }
+//    }
+
     /**
      * Main initialization of the input method component.  Be sure to call
      * to super class.
@@ -87,6 +110,7 @@ public class SoftKeyboard extends InputMethodService
         super.onCreate();
         mInputMethodManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
         mWordSeparators = getResources().getString(R.string.word_separators);
+//        setMainActivityView();
     }
     
     /**
@@ -704,4 +728,27 @@ public class SoftKeyboard extends InputMethodService
     
     public void onRelease(int primaryCode) {
     }
+
+
+    public void setMainActivityView(){
+
+
+//        View dialogView = super.getWindow().getWindow().getLayoutInflater().inflate()
+
+//        ( (MyApplication)getApplicationContext()).getMainActivity().getMainLayout()
+//                .addView(dialogView, new LinearLayout.LayoutParams(
+//                        ViewGroup.LayoutParams.MATCH_PARENT,
+//                        ViewGroup.LayoutParams.WRAP_CONTENT
+//                ));
+//
+//        ( (MyApplication)getApplicationContext()).getMainActivity()
+//                .setContentView(dialogView);
+
+    }
+
+
+
+
+
+
 }

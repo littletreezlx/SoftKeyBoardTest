@@ -3,12 +3,12 @@ package com.example.ford_macbookair_1.softkeyboardtest;
 import android.view.View;
 import android.view.inputmethod.BaseInputConnection;
 
-public class MyBaseInputConnection extends BaseInputConnection {
+public class MyInputConnection extends BaseInputConnection {
 
     public static String tx="";
 
 
-    public MyBaseInputConnection(View targetView, boolean fullEditor) {
+    public MyInputConnection(View targetView, boolean fullEditor) {
         super(targetView, fullEditor);
     }
 
